@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    --primary-blue: hsl(223, 87%, 63%);
+    --secondary-paleBlue: hsl(223, 100%, 88%);
+    --secondary-lightRed: hsl(354, 100%, 66%);
+    --neutral-gray:  hsl(0, 0%, 59%);
+    --neutral-veryDarkBlue: hsl(209, 33%, 12%);
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--neutral-veryDarkBlue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.logo {
+    width: 100px;
+}
+
+
+.dashboard {
+    width: 100%;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: #fff; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
