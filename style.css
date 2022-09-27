@@ -1,16 +1,18 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     --primary-blue: hsl(223, 87%, 63%);
     --secondary-paleBlue: hsl(223, 100%, 88%);
     --secondary-lightRed: hsl(354, 100%, 66%);
-    --neutral-gray:  hsl(0, 0%, 59%);
+    --neutral-gray: hsl(0, 0%, 59%);
     --neutral-veryDarkBlue: hsl(209, 33%, 12%);
-    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 body {
@@ -18,35 +20,111 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     min-height: 100vh;
     background-color: var(--neutral-veryDarkBlue);
 }
 
-.container {
+#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    padding: 50px;
+    max-width: 700px;
+    padding: 30px;
     background-color: #fff;
 }
 
-.logo {
+#logo {
     width: 100px;
+    margin: 50px 0px;
 }
 
+#title {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--neutral-gray);
+}
 
-.dashboard {
+span {
+    color: var(--neutral-veryDarkBlue);
+    font-weight: 700;
+}
+
+#paragraph {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form {
+    margin-top: 50px;
+    text-align: center;
     width: 100%;
 }
 
-.attribution { 
+input {
+    border: 1px solid var(--secondary-paleBlue);
+    font-size: 20px;
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+#emailInput:focus {
+    outline: none;
+}
+
+#errorMessage {
+    color: var(--secondary-lightRed);
+    display: none;
+}
+
+#btnSubmit {
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--primary-blue);
+    margin-top: 25px;
+}
+
+#btnSubmit:hover,
+svg:hover {
+    transform: scale(1.06);
+}
+
+#btnSubmit:active {
+    transform: scale(0.99);
+}
+
+#dashboard {
+    margin: 60px 0px;
+    width: 100%;
+}
+
+svg {
+    width: 30px;
+    height: auto;
+    margin: 20px;
+    color: var(--primary-blue);
+
+}
+
+#copyright {
+    color: var(--neutral-gray);
+}
+
+footer {
+    padding: 10px;
+}
+
+.attribution {
     font-size: 11px;
     text-align: center;
-    color: #fff; 
+    color: #fff;
 }
 
 .attribution a {
-     color: hsl(228, 45%, 44%); 
-    }
+    color: var(--primary-blue);
+}
